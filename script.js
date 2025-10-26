@@ -16,8 +16,7 @@ document.getElementById('add-movie-form').addEventListener('submit', async (e) =
     poster: form.poster.value || null,
     notes: form.notes.value || null,
     director: form.director.value || null,
-    cast: form.cast.value || null,
-    tags: tags.length ? tags : null,
+    tags: form.tags.value || null,
     date_watched: form.date_watched.value || null
   }]);
   
