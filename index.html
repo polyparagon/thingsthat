@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>thingsthat</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Thingsthat Movie Journal</h1>
+
+<form id="add-movie-form">
+  <input name="title" placeholder="Title" required>
+  <input name="rating" type="number" min="1" max="5" required>
+  <input name="poster" placeholder="Poster URL">
+  <textarea name="notes" placeholder="Notes"></textarea>
+  <input name="director" placeholder="Director">
+  <input name="cast" placeholder="Cast">
+  <input name="tags" placeholder="Tags, comma-separated">
+  <input name="date_watched" type="date">
+  <button type="submit">Add Movie</button>
+</form>
+
+<div id="feed"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
